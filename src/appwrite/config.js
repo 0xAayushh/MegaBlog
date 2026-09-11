@@ -87,8 +87,6 @@
 //                 conf.appwriteDatabaseId,
 //                 conf.appwriteCollectionId,
 //                 queries,
-                
-
 //             )
 //         } catch (error) {
 //             console.log("Appwrite serive :: getPosts :: error", error);
@@ -132,7 +130,6 @@
 //     }
 // }
 
-
 // const service = new Service()
 // export default service
 
@@ -141,7 +138,7 @@ import { Client, ID, Databases, Storage, Query } from "appwrite";
 
 export class Service {
     client = new Client();
-    databases;
+    databases; 
     bucket;
     
     constructor() {
